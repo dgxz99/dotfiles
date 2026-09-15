@@ -1,0 +1,13 @@
+theme = "dark"
+
+{{- if eq .chezmoi.os "windows" }}
+font_size = 11
+{{- else }}
+font_size = 13
+{{- end }}
+
+{{- if eq .chezmoi.hostname "work-laptop" }}
+profile = "work"
+{{- else }}
+profile = "personal"
+{{- end }}
